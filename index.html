@@ -10,7 +10,8 @@
         <div class="webpage">
 
             <aside class="left-container">
-                <image src="img/image.jpg" alt="Website Image" class="website-image"></image>
+                <img src="img/image.jpg" alt="Website Image" class="website-image"></img>
+                <img src="img/logo.svg" alt="Iintoo Logo" class="logo-image"></image>
             </aside>
 
             <section class="right-container">   
@@ -19,24 +20,26 @@
                         <p class="info">There is no charge or obligation upon registration.</p>
             
                     <div class="register-buttons">
-                        <button type="button" class="btn fb">Register with Facebook</button>
-                        <button type="button" class="btn ln">Register with LinkedIn</button>
+                        <button type="button" class="btn fb"><image src=img/fb.svg alt="Facebook Logo" class="btn-logo"></image>Register with Facebook</button>
+                        <button type="button" class="btn ln"><image src=img/ln.svg alt="LinkedIn Logo" class="btn-logo"></image>Register with LinkedIn</button>
                     </div>
 
-                    <div class="divider"><span>OR</span></div>
+                    <div class="divider">
+                        <div class="line"></div>
+                        <div class="text">OR</div>
+                        <div class="line"></div>
+                    </div>
 
                     <form id="signup-form">
                         <div class="row-forms">
                             <div class="input-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="gus.goodwin@gmail.com">
-                                
+                                <input type="email" id="email" name="email" placeholder="gus.goodwin@gmail.com" autofocus>
                             </div>
 
                             <div class="input-group">
                                 <label for="phone">Phone</label>
                                 <input type="phone" id="phone" name="phone">
-                                
                             </div>
                         </div>
                     </form>
@@ -45,21 +48,44 @@
                         <h2>What type of investor are you?</h2>
                         <p class="select-investor">Select the type of investor you are below.</p>
 
-                        <div class="row-investor">
-                            <label class="investor-option">
-                                <input type="radio" name="investor" value="individual" checked>Individual</label>
+                        <section class="row-investor">
+                            <div class="investor-wrap">
+                                <input type="radio" class="radio-outline" name="investor" value="individual" checked>
+                                <label class="investor-option">
+                                    <span>Individual</span>
+                                    <span class="info-icon" data-tooltip="Investing on my own behalf as a sole owner, joint tenant, or tenant in common." aria-hidden="true">🛈</span>
+                                </label>
+                                <div class="description">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</div>
+                            </div>
 
-                            <label class="investor-option">
-                                <input type="radio" name="investor" value="business">Business</label>
+                            <div class="investor-wrap">
+                                <input type="radio" class="radio-outline" name="investor" value="business">
+                                <label class="investor-option">
+                                    <span>Business</span>
+                                    <span class="info-icon" data-tooltip="Investing on  behalf of a corporation, partnership, or company." aria-hidden="true">🛈</span>
+                                </label>
+                                <div class="description">I am investing on  behalf of a corporation, partnership, or company.</div>
+                            </div>
 
-                            <label class="investor-option">
-                                <input type="radio" name="investor" value="ira">IRA</label>
+                            <div class="investor-wrap">
+                                <input type="radio" class="radio-outline" name="investor" value="ira">
+                                <label class="investor-option">
+                                    <span>IRA</span>
+                                    <span class="info-icon" data-tooltip="Investing with an IRA (Individual Retirement Account)." aria-hidden="true">🛈</span>
+                                </label>
+                                <div class="description">I am investing with my IRA (Individual Retirement Account).</div>
+                            </div>
 
-                            <label class="investor-option">
-                                <input type="radio" name="investor" value="trust">Trust</label>
-                        </div>
+                            <div class="investor-wrap">
+                                <input type="radio" class="radio-outline" name="investor" value="trust">
+                                <label class="investor-option">
+                                    <span>Trust</span>
+                                    <span class="info-icon" data-tooltip="Investing on behalf of a trust." aria-hidden="true">🛈</span>
+                                </label>
+                                <div class="description">I am investing on behalf of a trust.</div>
+                            </div>
+                        </section>
 
-                        <p class="investor-description">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</p>
                     </fieldset>
                     
                     <div class="terms">
