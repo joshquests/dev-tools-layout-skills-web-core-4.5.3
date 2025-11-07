@@ -27,7 +27,8 @@ body {
     display: flex;
     height: 100vh;
 }
-.left-container {flex: 1.4;
+.left-container {
+width: 50%;
 overflow: hidden;
 background-color: #eff6ff}
 
@@ -45,7 +46,7 @@ background-color: #eff6ff}
     max-width: 100%;}
 
 .right-container {
-    flex: 1;
+    width: 50%;
     display: flex;
     background: white;
     flex-direction: column;
