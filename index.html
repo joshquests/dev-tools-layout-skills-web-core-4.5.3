@@ -6,12 +6,10 @@
         <title>Iintoo Signup</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <div class="webpage">
-
+    <body class="webpage">
             <aside class="left-container">
-                <img src="img/image.jpg" alt="Website Image" class="website-image"></img>
-                <img src="img/logo.svg" alt="Iintoo Logo" class="logo-image"></image>
+                <img src="img/image.jpg" alt="Website Image" class="website-image">
+                <img src="img/logo.svg" alt="Iintoo Logo" class="logo-image">
             </aside>
 
             <section class="right-container">   
@@ -20,8 +18,8 @@
                         <p class="info">There is no charge or obligation upon registration.</p>
             
                     <div class="register-buttons">
-                        <button type="button" class="btn fb"><image src=img/fb.svg alt="Facebook Logo" class="btn-logo"></image>Register with Facebook</button>
-                        <button type="button" class="btn ln"><image src=img/ln.svg alt="LinkedIn Logo" class="btn-logo"></image>Register with LinkedIn</button>
+                        <button type="button" class="btn fb"><img src=img/fb.svg alt="Facebook Logo" class="btn-logo">Register with Facebook</button>
+                        <button type="button" class="btn ln"><img src=img/ln.svg alt="LinkedIn Logo" class="btn-logo">Register with LinkedIn</button>
                     </div>
 
                     <div class="divider">
@@ -44,60 +42,58 @@
                         </div>
                     </form>
 
-                    <fieldset class="investor-field">
+                    <div class="investor-field">
                         <h2>What type of investor are you?</h2>
                         <p class="select-investor">Select the type of investor you are below.</p>
 
                         <section class="row-investor">
                             <div class="investor-wrap">
-                                <input type="radio" class="radio-outline" name="investor" value="individual" checked>
-                                <label class="investor-option">
+                                <input type="radio" id="Individual" class="radio-outline" name="investor" value="individual" checked>
+                                <label for="Individual" class="investor-option">
                                     <span>Individual</span>
-                                    <span class="info-icon" data-tooltip="Investing on my own behalf as a sole owner, joint tenant, or tenant in common." aria-hidden="true">🛈</span>
+                                    <span class="info-icon" data-tooltip="Investing on my own behalf as a sole owner, joint tenant, or tenant in common." aria-hidden="true">?⃝</span>
                                 </label>
                                 <div class="description">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</div>
                             </div>
 
                             <div class="investor-wrap">
-                                <input type="radio" class="radio-outline" name="investor" value="business">
-                                <label class="investor-option">
+                                <input type="radio" id="Business" class="radio-outline" name="investor" value="business">
+                                <label for="Business" class="investor-option">
                                     <span>Business</span>
-                                    <span class="info-icon" data-tooltip="Investing on  behalf of a corporation, partnership, or company." aria-hidden="true">🛈</span>
+                                    <span class="info-icon" data-tooltip="Investing on  behalf of a corporation, partnership, or company." aria-hidden="true">?⃝</span>
                                 </label>
                                 <div class="description">I am investing on  behalf of a corporation, partnership, or company.</div>
                             </div>
 
                             <div class="investor-wrap">
-                                <input type="radio" class="radio-outline" name="investor" value="ira">
-                                <label class="investor-option">
+                                <input type="radio" id="IRA" class="radio-outline" name="investor" value="ira">
+                                <label for="IRA" class="investor-option">
                                     <span>IRA</span>
-                                    <span class="info-icon" data-tooltip="Investing with an IRA (Individual Retirement Account)." aria-hidden="true">🛈</span>
+                                    <span class="info-icon" data-tooltip="Investing with an IRA (Individual Retirement Account)." aria-hidden="true">?⃝</span>
                                 </label>
                                 <div class="description">I am investing with my IRA (Individual Retirement Account).</div>
                             </div>
 
                             <div class="investor-wrap">
-                                <input type="radio" class="radio-outline" name="investor" value="trust">
-                                <label class="investor-option">
+                                <input type="radio" id="Trust" class="radio-outline" name="investor" value="trust">
+                                <label for="Trust" class="investor-option">
                                     <span>Trust</span>
-                                    <span class="info-icon" data-tooltip="Investing on behalf of a trust." aria-hidden="true">🛈</span>
+                                    <span class="info-icon" data-tooltip="Investing on behalf of a trust." aria-hidden="true">?⃝</span>
                                 </label>
                                 <div class="description">I am investing on behalf of a trust.</div>
                             </div>
                         </section>
 
-                    </fieldset>
+                    </div>
                     
                     <div class="terms">
-                        <label>
-                           <input type="checkbox" name="agree" class="terms-agree"> I agree to the terms and receiving notifications from iintoo.
-                           <a href="terms.html" target="_blank" class="terms-link">View full terms</a>
+                        <label for="terms-agree">
+                           <input type="checkbox" name="agree" id="terms-agree" class="terms-agree"> I agree to the terms and receiving notifications from iintoo.
+                           <a target="_blank" class="terms-link">View full terms</a>
                         </label>
                     </div>
-
-                        <button: type="submit" class="btn submit">Create Account</button>
+                        <button type="submit" form="signup-form" class="btn submit">Create Account</button>
                 </div>
             </section>
-        </div>
     </body>         
 </html>
